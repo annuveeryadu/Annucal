@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+.button{
+     font-size: 20px;
+     text-align: center;
+     background-color: green;
+     color : white;
+ }
+ </style>
+ </head>
+<body style = "background-color:black">
+<h1 style = "background-color:gray; color:cyan" align = "center";> The Annu's Calculator </h1>
+<p style = "color:yellow">Welcome to Annu's % calculator. Here you can calculate percentage by entering whole and part numbers. Write values on fields and click Result button for result.</p><br><br>
+<lable for="vam" style = "background-color:tomato; color:yellow; font-size: 18px">Enter whole Number </lable>
+<input type = "text" id = "vam" border = "10px" style = "background-color:powderblue"><br><br>
+<lable for="jam" style = "background-color:tomato; color:yellow; font-size: 18px">Enter Part Number </lable>
+<input type = "text" id = "jam" style = "background-color:powderblue"><br><br>
+<button class = "button" onclick = "meen()"> Result </button>
+<p id="kul" style = "color:White; font-size:20px" border = "20px">Value will Print here....</p> 
+<script>
+function meen ()
+{
+   var x = document.getElementById("vam").value;
+   var y = document.getElementById("jam").value;
+   var a = parseInt(x);
+   var b = parseInt(y);
+   var c = b*100/a;
+   document.getElementById("kul").innerHTML = c + "%";
+}
+</script>
+
+</body>
+</html> 
